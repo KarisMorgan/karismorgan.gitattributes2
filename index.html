@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- this scales the content to display nicely on mobiles/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marine Jungle</title>
+
+    <!-- our custom styles -->
+    <link rel="stylesheet" href="css\main.css">
+
+    <script src="./js\app.js"></script>
+    <script src="./js\appsub.js"></script>
+
+    <!-- Bootstrap & Fontawesome - note that I (Rebecca) linked this differently than in the demo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e2a7928abf.js" crossorigin="anonymous"></script>
+    <!-- If the above doesn't work, use this (this currently isn't working for me)-->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+  </head>
+
+
+<body class = "pageType">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="./index.html">Marine Jungle</a> -->
+              <i class="fa-solid fa-fish-fins fa-2xl" style="color:darkblue"></i>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="form">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="query" name="q">
+                  <button class="btn btn-outline-success" type="submit">Search
+                  <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+		              </button>
+                </form>
+              </div>
+            </div>
+            <i class="fa-solid fa-fish-fins fa-2xl fa-flip-horizontal" style="color:darkblue"></i>
+          </nav>
+</header>
+
+<main>
+  <div class = homepage-intro>
+    <h1>Welcome to Marine Jungle</h1>
+    <h2>Join us on our mission to preserve and protect our oceans and sealife!</h2>
+  </div>
+        <!-- Bootstrap carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images.unsplash.com/photo-1606862417230-03908d3118ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" class="d-block w-100" alt="fish">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Preserve</h5>
+                <p5>Keep water and beaches clean so wildlife can thrive</p5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <img src="https://images.unsplash.com/photo-1416138645715-930585fe4ce2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="turtle"> -->
+             
+              <img src="https://images.unsplash.com/photo-1588293491737-070ef4cdb924?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="turtle">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Protect</h5>
+                <p5>Rescue and release marine animals and sealife</p5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1487446529283-07814a645e33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="stingray">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Prevent</h5>
+                <p5>Educate the public and share research with marine professionals</p5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    <!-- End of bootstrap carousel -->
+</main>
+
+<!-- Have some images in a line beneath with more facts over the images to fill the page or add an animated timeline? -->
+<div class="fact-heading">
+  <h1> Random facts, updated every day!
+    <p> Did you know...?</p>
+  </h1>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1532393950032-b666e39c29b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80" class="card-img-top" alt="dolphins">
+    <div class="card-body">
+      <p class="card-text">A group of dolphins is called a pod, eel or oysters a bed, fish a school or shoal, jellyfish a fluther or smack, salmon a bind, draught or run, sea urchins a herd, trout a hover and turtles a bale, dole or nest. Learn more about Dolphins found in the UK <A href='https://uk.whales.org/whales-dolphins/which-whales-and-dolphins-live-in-the-uk/'> here. </A> </p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="card-img-top" alt="ocean">
+    <div class="card-body">
+      <p class="card-text">The oceans provide 99% of the living space on the planet containing 50-80% of all life. Learn more about the Oceans role in biodiversity <A href='https://www.cbd.int/article/exploring-linkages-between-ocean-biodiversity-8June2022'> here. </A></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1516683169270-7514e272a5fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" class="card-img-top" alt="moray eel">
+    <div class="card-body">
+      <p class="card-text">Moray eels are not aggressive when they open and close their mouth, they are actually just breathing. Learn more about the Moray Eels <A href='https://masterliveaboards.com/fascinating-facts-you-probably-didnt-know-about-moray-eels/'> here. </A></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<script>
+  const f = document.getElementById('form');
+  const q = document.getElementById('query');
+  const google = 'https://www.google.com/search?q=site%3A+';
+  // Our site isn't live so I added this as a placeholder
+  const site = 'https://www.marlin.ac.uk/species';
+
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+
+  f.addEventListener('submit', submitted);
+</script>
+
+</body>
+
+<footer>
+<div>
+  <div>
+  <!-- Newsletter -->
+
+<div class="footer-icons">
+  <i class="fa-solid fa-anchor fa-2xl" style="color:darkblue"></i> 
+    <h4 class="child-icon">Subscribe & Follow to recieve updates</h4>
+    <i class="fa-solid fa-anchor fa-2xl fa-flip-horizontal" style="color: darkblue"></i>
+</div>
+
+    <form>
+        <label for="email">Enter your email address:</label>
+        <input type="email" id="email" name="email">
+        <button class = "subscribefooter">Submit</button>
+    </form>
+  </div>
+
+<div id="social-icons">
+  <!-- ==== social icons ==== -->
+    <a href="https://twitter.com" target="_blank">
+      <i class="fa-brands fa-twitter" style="color:darkblue"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank">
+      <i class="fa-brands fa-facebook" style="color:darkblue"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank">
+      <i class="fa-brands fa-instagram" style="color:darkblue"></i>
+      </a>
+</div>
+    
+    <!-- Our names and copyright -->
+    <div>
+    <p>Made by Georgia, Karis & Rebecca &copy; Code First Girls, 2022</p>
+   </div>
+  </div>
+
+</footer>
+</html>

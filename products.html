@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Jungle</title>
+    <link rel="stylesheet" href="css\main.css">
+    <script src="./js\app.js"></script>
+    <!-- Bootstrap & Fontawesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e2a7928abf.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="./index.html">Marine Jungle</a> -->
+              <i class="fa-solid fa-fish-fins fa-2xl" style="color:darkblue"></i>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" id="form">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="query" name="q">
+                  <button class="btn btn-outline-success" type="submit">Search
+                  <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+		              </button>
+                </form>
+              </div>
+            </div>
+            <i class="fa-solid fa-fish-fins fa-2xl fa-flip-horizontal" style="color:darkblue"></i>
+          </nav>
+
+  <!-- Background image -->
+  <div
+  class="p-5 text-center bg-image"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1597388069053-b8e6a860b6ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  "
+>
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Store</h1>
+        <h4 class="mb-3">Autumn 2022</h4>
+        <i class="fa-solid fa-basket-shopping"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
+</header>
+<main>
+  <!-- add icons next to these? -->
+  <!-- Have each title be in an image and large? -->
+
+  <div class="product-header">
+    <h2>This months products</h2>
+    <h4>Support us by buying our merch!</h4>
+  </div>
+
+    <div class="shop-items">
+        <div>
+            <img src="https://images.unsplash.com/photo-1621508638997-e30808c10653?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9scGhpbiUyMHRveXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="octopus-toy" width="300">
+            <div>
+                <p>Octopus teddy</p>
+                <p>£15</p>
+                <button class onclick="window.location.href = 'payment.html';"><span>Buy Now</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1659468550884-a46da27eff8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHNlYWxpZmUlMjBicmFjZWxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="bracelet" width="300">
+            <div>
+                <p>Save the ocean bracelet</p>
+                <p>£12</p>
+                <button class onclick="window.location.href = 'payment.html';"><span>Buy Now</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="ocean print" width="300">
+            <div>
+                <p>Ocean Print</p>
+                <p>£25</p>
+                <button class onclick="window.location.href = 'payment.html';"><span>Buy Now</span></button>
+            </div>
+        </div>
+    </div>
+<!-- Adoption - we're really oversimplifying this but it's cute to add in -->
+<div class="product-header">
+    <h2>Or why not adopt one of our marine friends?</h2>
+    <h4>Help our oceans directly by supporting those who live there*: </h4>
+</div>
+    <div class="shop-items">
+        <div>
+            <img src="https://images.unsplash.com/photo-1557657043-23eec69b89c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="adopt a seal" width="300">
+            <div>
+                <p>Adopt a Seal</p>
+                <p>£5 a month</p>
+                <button class onclick="window.location.href = 'payment.html';"><span>Pick Me!</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="adopt a turtle" width="300">
+            <div>
+                <p>Adopt a Turtle</p>
+                <p>£5 a month</p>
+                <button class onclick="window.location.href = 'payment.html';"><span>Pick Me!</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1523670982602-6bb44fd1586e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YWRvcHQlMjBkb2xwaGlufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="adopt a dolphin" width="300">
+            <div>
+                <p>Adopt a dolphin</p>
+                <p>£5 a month</p>
+                <button class onclick="window.location.href = 'payment.html';"><span>Pick Me!</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="adoption-note">
+      <h8>*Join our newsletter to keep up to date on our plans to expand our adoption range!</h8>
+    </div>
+
+    <!-- Other products with links to their websites -->
+
+<div class="product-header">
+    <h2>Check out other ways to help our oceans!</h2>
+    <h4>Support our friends by checking out other great products on offer: </h4>
+</div>
+
+    <div class="shop-items">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0533/0478/7117/products/recycled-ocean-plastic-folding-litter-picker-881340_1800x1800.jpg?v=1653043327" alt="litter picker" width="300">
+            <div>
+                <p>RECYCLED OCEAN PLASTIC FOLDING LITTER PICKER from WATERHAUL</p>
+                <!-- This was £15, could strikethrough this? -->
+                <p class="reduced">£15</p>
+                <p class="pricenow">Now £12 </p> 
+                <!-- add brief info about them and then link -->
+                <button onclick="window.location.href = 'https://waterhaul.co/products/recycled-ocean-plastic-litterpicker';"><span>Visit Site</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0996/1022/products/Parrot-Fish-2lb-PDP-730x620_1_1000x.jpg?v=1659060332" alt="bracelet" width="300">
+            <div>
+                <p>Parrotfish 2-Pound Pack Bracelet by 4Ocean</p>
+                <p>£34.51</p>
+                <!-- add brief info about them and then link -->
+                <button onclick="window.location.href = 'https://www.4ocean.com/products/parrotfish-2-pound-pack?variant=41795366224065';"><span>Visit Site</span></button>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.teemill.com/bprqpsjnmuut9r9bhzfjvgaheenr4qolfo4ok85mq3quvlzc.jpeg.webp?w=1080&v=2" alt="Sea Dragon T-Shirt" width="300">
+            <div>
+                <p>Sea Dragon Top by Marine Conservation Society</p>
+                <p>£20</p>
+                <button class onclick="window.location.href = 'https://mcsshop.org.uk/product/sea-dragon-top/';"><span>Visit Site</span></button>
+            </div>
+        </div>
+    </div>
+
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      // Our site isn't live so I added this as a placeholder
+      const site = 'https://www.marlin.ac.uk/species';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+  </body>
+
+
+
+<footer>
+  <div>
+    <div>
+    <!-- Newsletter -->
+  
+  <div class="footer-icons">
+    <i class="fa-solid fa-anchor fa-2xl" style="color:darkblue"></i> 
+      <h4 class="child-icon">Subscribe & Follow to recieve updates</h4>
+      <i class="fa-solid fa-anchor fa-2xl fa-flip-horizontal" style="color: darkblue"></i>
+  </div>
+  
+      <form>
+          <label for="email">Enter your email address:</label>
+          <input type="email" id="email" name="email">
+          <button class = "subscribefooter">Submit</button>
+      </form>
+    </div>
+  
+  <div id="social-icons">
+    <!-- ==== social icons ==== -->
+      <a href="https://twitter.com" target="_blank">
+        <i class="fa-brands fa-twitter" style="color:darkblue"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+        <i class="fa-brands fa-facebook" style="color:darkblue"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+        <i class="fa-brands fa-instagram" style="color:darkblue"></i>
+        </a>
+  </div>
+      
+      <!-- Our names and copyright -->
+      <div>
+      <p>Made by Georgia, Karis & Rebecca &copy; Code First Girls, 2022</p>
+     </div>
+    </div>
+  
+  </footer>
+
+</html>

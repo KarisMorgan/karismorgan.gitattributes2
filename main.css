@@ -1,0 +1,335 @@
+
+/* Main Index */
+
+.text-muted {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+
+/* This pushes the content of the body downwards so it's not hidden by the nav bar */
+body { 
+    padding-top: 65px; 
+}
+
+.fact-heading {
+    text-align: center;
+    font-size: 32px;
+    margin:5px;
+    background-image: linear-gradient(to bottom,
+    rgba(255, 255, 0, 0.3),
+    rgba(10, 224, 253, 0.3)
+), none;
+    padding: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.card img{
+    height: 300px;
+    width: 450px
+}
+
+.homepage-intro{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+main{
+    flex: 1;
+}
+/* idk if this does anything but hopefully makes the carousel not create a bottom scroll bar */
+.carousel-slide{
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+.carousel-caption{
+    margin-bottom: 40%;
+    font-size: xx-large;
+}
+
+.carousel-inner{
+    height: 600px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h4{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: darkblue;
+
+}
+
+/* Footer spacing */
+.footer-icon{
+    margin: 1rem;
+    padding: 2rem 2rem;
+  }
+
+  .child-icon{
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    word-wrap:unset;
+  }
+
+  .fa-anchor{
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    word-wrap:unset;
+  }
+
+/* Social Media Icons */
+.fa-twitter{
+    font-size: xx-large;
+}
+.fa-facebook{
+    font-size: xx-large;
+}
+.fa-instagram{
+    font-size: xx-large;
+}
+#social-icons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);  /* change color when hover over the link */
+  }
+
+
+
+/* Products  */
+
+/* Tried to get the £15 before the £12 but it broke everything */
+.reduced{
+    text-decoration: line-through;
+    
+}
+
+.product-header{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+    margin:10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 3%;
+    background-image: linear-gradient(to bottom,
+    rgba(255, 255, 0, 0.3),
+    rgba(10, 224, 253, 0.3)
+  ), none;
+}
+
+.adoption-note{
+    text-align: center;
+    color: darkblue;
+}
+
+.shop-items{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    width: 100%;  /* fit the image within the div */
+    margin: 15px 0;
+}
+
+.shop-items p{
+    font-size:xx-large;
+}
+
+.shop-items img{
+    padding: 20px;
+    width: 420px;
+    height: 450px;
+}
+
+/* Products Buttons formatting */
+
+.shop-items button{
+    color: white;
+    background-color: darkblue;
+    border: 2px solid black;
+    transition-duration: all 0.5s;
+    border-radius: 12px;
+    padding: 20px 30px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: x-large;
+}
+
+
+.shop-items button:hover {
+    background-color: white; 
+    color: darkblue;
+  }
+
+
+
+.shop-items button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.shop-items button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+.shop-items button:hover span {
+    padding-right: 25px;
+  }
+  
+.shop-items button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.button-position {
+    position: absolute;
+    bottom: 0;
+  }
+
+.fa-basket-shopping{
+    font-size: xx-large;
+}
+
+
+/* About us */
+.our-mission {
+    text-align: center;
+    margin:10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 3%;
+    background-image: linear-gradient(to bottom,
+    rgba(255, 255, 0, 0.3),
+    rgba(10, 224, 253, 0.3)
+  ), none;
+}
+.our-mission h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+
+
+.our-mission ul{
+    list-style-type: none;
+}
+
+#our-mission-sub{
+    font-weight:bolder;
+}
+
+.mask{
+    height: 200px;
+}
+
+.quote-card{
+    text-align: center;
+}
+
+.video-parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+  }
+.video-child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    word-wrap:unset;
+  }
+
+
+
+
+/* Contact us */
+
+ul{
+    list-style-type: disc;
+} 
+
+#contact-info{
+    list-style-type:none;
+    width: 300px;
+} 
+
+.our-mission {
+    border-right-width: 50px;
+    border-color: black;
+}
+.fa-phone{
+    float: left;
+    padding-right: 0.5vw;
+    }
+.fa-location-dot{
+    float: left;
+    padding-right: 0.5vw;
+}
+.fa-envelope{
+    float:left;
+    padding-right:0.5vw;
+}
+
+.map{
+    margin: 1px
+}
+
+.contact-header{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+    margin:10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 1%;
+    background-image: linear-gradient(to bottom,
+    rgba(255, 255, 0, 0.3),
+    rgba(10, 224, 253, 0.3)
+  ), none;
+}
+
+.parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+  }
+  .child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    word-wrap:unset;
+  }
+
+
+.contact-form{
+    text-align: center;
+    /* width: 30vw;
+    height: 30vw;
+    padding: 1rem;
+    float:right; */
+}
+
+
